@@ -30,7 +30,16 @@ class TodoItemWidget extends StatelessWidget {
         trailing: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            IconButton(onPressed: onToggleCompleted, icon: Icon(todo.isCompleted? Icons.check_box:Icons.check_box_outline_blank))
+            IconButton(onPressed: onToggleCompleted, icon: Icon(todo.isCompleted? Icons.check_box:Icons.check_box_outline_blank)),
+            // IconButton(
+            //       icon: const Icon(
+            //         Icons.edit,
+            //         color: AppStyles.secondaryColor,
+            //       ),
+            //       onPressed: () {
+            //         _showEditTodoDialog(context, todo);
+            //       }),
+              IconButton(onPressed: onDelete, icon: const Icon(Icons.delete)),
           ],
         ),
       ),
