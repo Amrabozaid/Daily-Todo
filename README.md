@@ -1,4 +1,4 @@
-# flutter_project
+# Daily Todo
 
 A new Flutter project.
 

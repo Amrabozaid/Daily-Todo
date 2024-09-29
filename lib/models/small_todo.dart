@@ -1,12 +1,10 @@
-class Todo {
+class SmallTodo{
   String id;
   String title;
-  String description;
   bool isCompleted;
 
-  Todo(
+  SmallTodo(
       {required this.id,
       required this.title,
-      required this.description,
       this.isCompleted = false});
 }
